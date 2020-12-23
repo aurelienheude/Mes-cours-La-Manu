@@ -1,0 +1,93 @@
+<!--Reprendre l’exercice 5 du HTML et appliquer le style pour obtenir l’apparence de l’image d’illustration.
+Pour le CSS le mettre dans une balise style.
+Vous ne devez pas utiliser d'attribut style dans cet exercice.-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cour lamanu</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        #titre {
+            text-align: center;
+        }
+
+        #tab
+
+        /* Mettre une bordure sur les td ET les th */
+            {
+            border: 1px solid black;
+        }
+
+        #solde {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tftable">
+        <!-- <td id="titre" colspan="4">Mon compte BNP</td> -->
+        <caption>Mon compte BNP</caption>
+        <thead>
+            <tr>
+                <th id="tab">Date</th>
+                <th id="tab">Libellé</th>
+                <th id="tab">Crédit</th>
+                <th id="tab">Débit</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td id="tab">01/05/2016</td>
+                <td id="tab">Paye</td>
+                <td id="tab">1500</td>
+                <td id="tab">0</td>
+            </tr>
+
+            <tr>
+                <td id="tab">01/05/2016</td>
+                <td id="tab">courses de la semaine</td>
+                <td id="tab">0</td>
+                <td id="tab">152,30</td>
+            </tr>
+
+            <tr>
+                <td id="tab">04/05/2016</td>
+                <td id="tab">Mc do</td>
+                <td id="tab">0</td>
+                <td id="tab">32,40</td>
+            </tr>
+
+            <tr>
+                <td id="tab">05/05/2016</td>
+                <td id="tab">Loyer</td>
+                <td id="tab">0</td>
+                <td id="tab">700</td>
+            </tr>
+
+            <tr>
+                <td id="tab">05/05/2016</td>
+                <td id="tab">Internet</td>
+                <td id="tab">0</td>
+                <td id="tab">39,90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="solde" colspan="2">Solde</td>
+                <td id="solde" colspan="2">575,40€</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

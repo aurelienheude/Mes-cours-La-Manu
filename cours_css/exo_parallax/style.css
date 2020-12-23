@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
+h1
+{
+    font-size: 50pt;
+    height: 12em; /* hauteur du parent */
+    line-height: 12em; /* hauteur de ligne (identique) */
+    white-space: nowrap;
+    display: inline-block;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+.heading{
+    text-align: center;
+    background: url('your_name.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.real1
+{
+    text-align: center;
+    background: url('your_name2.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.real2
+{
+    text-align: center;
+    background: url('your_name3.png');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}

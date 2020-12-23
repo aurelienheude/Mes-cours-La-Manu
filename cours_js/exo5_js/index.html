@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Exercice_5</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <label for="firstNumber">Premier nombre : </label><input type="text" id="firstNumber" /><br />
+    <label for="secondNumber">Deuxième nombre : </label><input type="text" id="secondNumber" /><br />
+    <button type="button" onclick="showResult();">Valider</button>
+
+
+    <script>
+        function showResult() {
+            // Sélectionner l'élément input et récupérer sa valeur
+            let numberOne = parseInt(document.getElementById("firstNumber").value);
+            let numberTwo = parseFloat(document.getElementById("secondNumber").value);
+            let result = numberOne * numberTwo; // Afficher la valeur
+            window.alert("Votre incroyable résultat est égal à : " + result);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1000px;
+    background: #444;
+}
+header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 15%;
+    background-image: url('banniere.png');
+    text-align: center;
+}
+header h1
+{
+    display: inline-block;
+    color: white;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+article h2{
+    font-style: italic;
+}
+header hr
+{
+    width: 300px;
+    height: 10px;
+    background-color: white;
+}
+nav {
+    height: auto;
+    width: 100%;
+    background: #444;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+    padding: 10px;
+}
+nav ul li{
+    transition: 0.3s;
+    background: #666;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    background: #444;
+    width: auto;
+    height: auto;
+}
+nav ul li a:hover{
+    transition: 0.3s;
+    color: green;
+}
+#container{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+}/*ouiii*/
+aside{
+    float: left;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: 100%;
+    background: grey;
+}
+section{
+    float: right;
+    margin: 0px; 
+    padding: 0px;
+    width: 80%;
+    height: 100%;
+    background: blue;
+}
+article{
+    text-align: center;
+    margin: 80px auto;
+    padding: 50px;
+    width: 300px;
+    background: pink;
+}
+footer{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 20%;
+    background: yellow;
+}

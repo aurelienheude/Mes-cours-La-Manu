@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cour lamanu</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <form method="POST" id=paiement>
+    <fieldset id="identite">
+      <legend id="identite">Votre identité</legend>
+
+      <ol>
+        <li>
+          <label for=nom>Nom :</label>
+          <input type="text" name="nom" placeholder="Nom" required autofocus>
+        </li>
+        <li>
+          <label for=email>Prénom :</label>
+          <input type="text" name="prenom" placeholder="Prénom" required>
+        </li>
+        <li>
+          <label for=telephone>Adresse email :</label>
+          <input type="email" name="email"" placeholder=" Adresse email" required>
+        </li>
+      </ol>
+    </fieldset>
+
+    <fieldset id="addresse_livraison">
+      <legend id="addresse_livraison">Adresse de livraison</legend>
+      <ol>
+        <li>
+          <label for=adresse>Adresse</label>
+          <textarea name="adresse" rows=5 required></textarea>
+        </li>
+        <li>
+          <label for=codepostal>Code postal</label>
+          <input type="number" name="codepostal" placeholder="Code postal"" required>
+                  </li>
+                    <li>
+                    <label for=pays>Ville</label>
+                    <input type=" text" name="Ville" placeholder="Ville" required>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset id="information_reglement">
+      <legend id="information_reglement">Informations de règlement</legend>
+      <ol>
+        <li>
+          <legend>Type de carte bancaire :</legend>
+          <ol>
+            <li style="list-style: circle;">
+              <input name="type_de_carte" type="radio">
+              <label for=visa>VISA</label>
+            </li>
+            <li style="list-style: circle;">
+              <input name="type_de_carte" type="radio">
+              <label for=mastercard>Mastercard</label>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <label for=numero_de_carte>Num&eacute;ro de carte :</label>
+          <input id="numero_de_carte" name="numero_de_carte" type="number" placeholder="Num&eacute;ro de carte :"
+            required>
+        </li>
+        <li>
+          <label for=securite>Code de sécurité :</label>
+          <input id="securite" name="securite" type="number" placeholder="Code de sécurité" required>
+        </li>
+        <li>
+          <label for=nom_porteur>Nom du titulaire :</label>
+          <input name="nom_porteur" type="text" placeholder="Nom du titulaire" required>
+        </li>
+      </ol>
+    </fieldset>
+    <button type="submit">J'achète !</button>
+  </form>
+</body>
+
+</html>
