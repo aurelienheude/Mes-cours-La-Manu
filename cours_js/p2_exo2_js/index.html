@@ -3,10 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <title>Exercice 2</title>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-  <form>
-    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+ <!-- Une boîte de dialogue qui contient un formulaire -->
+<dialog id="favDialog">
+  <form method="dialog">
+    <p><label>Animal préféré :
+      <select>
+        <option></option>
+        <option>Panda roux</option>
+        <option>Macrotus</option>
+        <option>Koala</option>
+      </select>
+    </label></p>
+    <menu>
+      <button value="cancel">Annuler</button>
+      <button id="confirmBtn" value="default">Confirmer</button>
+    </menu>
   </form>
+</dialog>
+
+<menu>
+  <button id="updateDetails">Mettre à jour les détails</button>
+</menu>
+
+<output aria-live="polite"></output>
 </body>
 </html>
