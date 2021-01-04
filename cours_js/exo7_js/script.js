@@ -14,7 +14,7 @@ function showResult()
      let yearOfBirth = document.getElementById("yearOfBirth").value;
      // Afficher la valeur
      
-     let resultat = ((shoeSize*2) + 5) *50 - yearOfBirth + 1766;
+     let resultat = ((((shoeSize*2) + 5) *50) - yearOfBirth) + 1771;
  
      document.getElementById("result").innerText = resultat; // affichage du résultat dans une balise
 }
