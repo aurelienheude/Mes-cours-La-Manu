@@ -1,5 +1,5 @@
 
-document.getElementById("go").addEventListener("click", resultat(e));
+document.getElementById("go").addEventListener("click", resultat(e)); 
 
 function divisionNumber(e) 
 {
