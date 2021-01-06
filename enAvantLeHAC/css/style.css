@@ -1,0 +1,9 @@
+#trTab:active{
+  background: #091c3e !important;
+}
+th{
+    text-align: center;
+}
+td{
+    color: #091c3e;
+}
