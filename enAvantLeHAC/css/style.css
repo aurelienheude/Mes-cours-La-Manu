@@ -29,7 +29,7 @@
 .TrFirst
 {
     background-color: #091c3e;
-    color: white;
+    color: white !important;
 }
 
 .TrFirst:hover
