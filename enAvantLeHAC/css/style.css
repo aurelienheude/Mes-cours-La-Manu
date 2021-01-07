@@ -1,9 +1,43 @@
-#trTab:active{
+#trTab:active
+{
   background: #091c3e !important;
 }
-th{
+
+.thStyle
+{
+    text-transform: uppercase;
+    color : #091c3e;
+    font-weight: normal;
     text-align: center;
 }
-td{
-    color: #091c3e;
+.thRow
+{
+    vertical-align: middle;
+}
+
+.ClubText
+{
+  text-align: left;
+  font-weight: bold;
+}
+
+.PtsBold
+{
+  font-weight: bold;
+}
+
+.TrFirst
+{
+    background-color: #091c3e;
+    color: white;
+}
+
+.TrFirst:hover
+{
+  color: white !important;
+}
+
+.TdFirst
+{
+  color: white !important;
 }

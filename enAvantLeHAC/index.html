@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enavantlehac</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--  Mon fichier CSS  -->
+
     <link href="css/style.css" rel="stylesheet">
+
+    <!--  MES CDN   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!--   FONT AWESOME   -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <div class="container-fluid vhh-100">
-        <div class="container-fluid p-5 text-center">
+    <div class="container-fluid">
+        <div class="container p-5 text-center">
             <div class="row">
                 <h5 class="col-md-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                    </svg>
+                    <i class="fas fa-chevron-left text-"></i>
                     <b>JOURNEE 8</b>
-                    <svg id="textBold" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                    </svg>
+                    <i class="fas fa-chevron-right"></i>
                 </h5>
             </div>
         </div>
@@ -35,568 +36,646 @@
         <!------------------------------------------------------   PARTIE TABLEAU   ------------------------------------------------>
         <!-------------------------------------------------------------------------------------------------------------------------->
 
-        <div class="table-responsive px-5 text-center">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">position</th>
-                        <th scope="col">club</th>
-                        <th scope="col">points</th>
-                        <th scope="col">joués</th>
-                        <th scope="col">gagnées</th>
-                        <th scope="col">nuls</th>
-                        <th scope="col">PERDUS</th>
-                        <th scope="col">but pour</th>
-                        <th scope="col">but contre</th>
-                        <th scope="col">DIFF.</th>
-                        <th scope="col">FORME</th>
+        <div class="text-center">
+            <table class="table table-hover align-middle">
+                <thead class="">
+                    <tr class="">
+                        <th class="thStyle d-none d-sm-table-cell" >position</th>
+                        <th class="thStyle d-none d-sm-table-cell" >club</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >points</th>
+                        <th class="thStyle d-lg-none d-sm-table-cell d-none" >PTS</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >joués</th>
+                        <th class="thStyle d-lg-none d-sm-table-cell d-none" >J</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >gagnées</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >nuls</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >perdus</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >but pour</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >but contre</th>
+                        <th class="thStyle d-none d-sm-table-cell" >DIFF.</th>
+                        <th class="thStyle d-none d-lg-table-cell d-none" >FORME</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-active">
-                        <th scope="row">1
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" />
-                            </svg>
+                    <tr class="table-active TrFirst">
+                        <th class="" scope="row">1 
+                            <i class="fas fa-md fa-circle text-muted"></i>
                         </th>
 
-                        <td>
+                        <td class="ClubText d-none d-sm-table-cell">                            
                             <img src="assets/img/90.png" alt="logo paris" />PARIS FC
                         </td>
 
-                        <td>16</td>
-                        <td>7</td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>12</td>
-                        <td>5</td>
-                        <td>+7</td>
-                        <td>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---
+                        <td class="PtsBold d-none d-sm-table-cell">16</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">5</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">12</td>
+                        <td class="d-none d-lg-table-cell d-none">5</td>
+                        <td class="d-none d-sm-table-cell">+7</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
                         </td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                     <tr>
-                        <th class="col-md-1" scope="row">2 <svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/28.png" alt="logo CHAMOIS NIORTAIS FC" />CHAMOIS NIORTAIS FC</td>
-                        <td>14</td>
-                        <td>7</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>4</td>
-                        <td>+4</td>
-                        <td>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"class="bi bi-circle-fill" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" /></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"class="bi bi-circle-fill" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" /></svg> 
-                            ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">3<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />FC
-                            SOCHAUX-MONTBELIARD
+                        <th class="" scope="row">2
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/28.png" alt="logo CHAMOIS NIORTAIS FC" />CHAMOIS NIORTAIS FC
                         </td>
-                        <td id="tdOne">13</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>10</td>
-                        <td>6</td>
-                        <td>+4</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">4<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />ESTAC
-                            TROYES</td>
-                        <td id="tdOne">13</td>
-                        <td>7</td>
-                        <td>4</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>8</td>
-                        <td>4</td>
-                        <td>+4</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">5<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />CLERMONT
-                            FOOT 63</td>
-                        <td id="tdOne">12</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>9</td>
-                        <td>3</td>
-                        <td>+6</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">6<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />GRENOBLE
-                            FOOT 38</td>
-                        <td id="tdOne">12</td>
-                        <td>7</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>11</td>
-                        <td>7</td>
-                        <td>+4</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">7<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />STADE
-                            MALHERBE CAEN</td>
-                        <td id="tdOne">11</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td>+1</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">8<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png"
-                                alt="logo FC SHOCHAUX-MONTBELIARD" />VALENCIENNES FC</td>
-                        <td id="tdOne">10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td>+1</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">9<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30"
-                                fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />EN AVANT
-                            GUINGAMP</td>
-                        <td id="tdOne">10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>7</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">10<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />USL
-                            DUNKERQUE</td>
-                        <td id="tdOne">10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">11<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />HAVRE AC
+
+                        <td class="PtsBold d-none d-sm-table-cell">14</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">9</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-sm-table-cell">+4</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
                         </td>
-                        <td id="tdOne">10</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>8</td>
-                        <td>-2</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                     <tr>
-                        <th class="col-md-1" scope="row">12<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />TOULOUSE FC
+                        <th class="" scope="row">3
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />FC SOCHAUX-MONTBELIARD
                         </td>
-                        <td id="tdOne">9</td>
-                        <td>7</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>2</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">13<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AJ AUXERRE
+
+                        <td class="PtsBold d-none d-sm-table-cell" >13</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">0</td>
+                        <td class="d-none d-lg-table-cell d-none">10</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-sm-table-cell">+4</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-muted"></i>
                         </td>
-                        <td id="tdOne">9</td>
-                        <td>7</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>4</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>-1</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                     <tr>
-                        <th class="col-md-1" scope="row">14<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AS NANCY
-                            LORRAINE</td>
-                        <td id="tdOne">8</td>
-                        <td>7</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>7</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">15<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="red" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />CHÂTEAUROUX
+                        <th class="" scope="row">4
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/33.png" alt="logo FC SHOCHAUX-MONTBELIARD" />ESTAC TROYES
                         </td>
-                        <td id="tdOne">8</td>
-                        <td>7</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">16<svg xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="30" fill="green" class="bi bi-caret-up-fill text-success" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AMIENS SC
+
+                        <td class="PtsBold d-none d-sm-table-cell" >13</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">8</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-sm-table-cell">+4</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
                         </td>
-                        <td id="tdOne">8</td>
-                        <td>7</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>-1</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                     <tr>
-                        <th class="col-md-1" scope="row">17
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="red"
-                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />RODEZ
-                            AVEYRON FOOTBALL
+                        <th class="" scope="row">5
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/40.png" alt="logo FC SHOCHAUX-MONTBELIARD" />CLERMONT FOOT 63
                         </td>
-                        <td id="tdOne">8</td>
-                        <td>7</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>11</td>
-                        <td>-5</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">18<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />FC CHAMBLY
-                            OISE</td>
-                        <td id="tdOne">5</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>13</td>
-                        <td>-7</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
-                    </tr>
-                    <tr>
-                        <th class="col-md-1" scope="row">19<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AC AJACCIO
+
+                        <td class="PtsBold d-none d-sm-table-cell" >12</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">9</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-sm-table-cell">+6</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
                         </td>
-                        <td id="tdOne">4</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>3</td>
-                        <td>11</td>
-                        <td>-8</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                     <tr>
-                        <th class="col-md-1" scope="row">20<svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="grey" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg></th>
-                        <td id="textBold"><img src="assets/img/160.png" alt="logo FC SHOCHAUX-MONTBELIARD" />PAU
-                            FOOTBALL CLUB</td>
-                        <td>3</td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>9</td>
-                        <td>-7</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-circle-fill" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="8" />
-                            </svg> ---</td>
+                        <th class="" scope="row">6
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/38.png" alt="logo FC SHOCHAUX-MONTBELIARD" />GRENOBLE FOOT 38
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >12</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">0</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">11</td>
+                        <td class="d-none d-lg-table-cell d-none">7</td>
+                        <td class="d-none d-sm-table-cell">+4</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
                     </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">7
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/20.png" alt="logo FC SHOCHAUX-MONTBELIARD" />STADE MALHERBE CAEN
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell">11</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">5</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-sm-table-cell">+1</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">8
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/68.png"alt="logo FC SHOCHAUX-MONTBELIARD" />VALENCIENNES FC
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >10</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">5</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-sm-table-cell">+1</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">9
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/24.png" alt="logo FC SHOCHAUX-MONTBELIARD" />EN AVANT GUINGAMP
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell">10</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">7</td>
+                        <td class="d-none d-lg-table-cell d-none">7</td>
+                        <td class="d-none d-sm-table-cell">0</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">10
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/48.png" alt="logo FC SHOCHAUX-MONTBELIARD" />USL DUNKERQUE
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >10</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-sm-table-cell">0</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+                    
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">11
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/5.png" alt="logo FC SHOCHAUX-MONTBELIARD" />HAVRE AC
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >10</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-lg-table-cell d-none">8</td>
+                        <td class="d-none d-sm-table-cell">-2</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">12
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/16.png" alt="logo FC SHOCHAUX-MONTBELIARD" />TOULOUSE FC
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >9</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">8</td>
+                        <td class="d-none d-lg-table-cell d-none">8</td>
+                        <td class="d-none d-sm-table-cell">0</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">13
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/2.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AJ AUXERRE
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >9</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">0</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">10</td>
+                        <td class="d-none d-lg-table-cell d-none">11</td>
+                        <td class="d-none d-sm-table-cell">-1</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">14
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/11.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AS NANCY LORRAINE
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >8</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">7</td>
+                        <td class="d-none d-lg-table-cell d-none">7</td>
+                        <td class="d-none d-sm-table-cell">0</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">15
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/22.png" alt="logo FC SHOCHAUX-MONTBELIARD" />CHÂTEAUROUX
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >8</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-sm-table-cell">0</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-success"></i>
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">16
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="green" 
+                            class="bi bi-caret-up-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/18.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AMIENS SC
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >8</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-sm-table-cell">-1</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-success"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+a
+                    <tr>
+                        <th class="" scope="row">17
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="22" 
+                            height="22" 
+                            fill="red" 
+                            class="bi bi-caret-down-fill" 
+                            viewBox="0 0 16 16">
+                                <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/64.png" alt="logo FC SHOCHAUX-MONTBELIARD" />RODEZ AVEYRON FOOTBALL
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >8</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-lg-table-cell d-none">11</td>
+                        <td class="d-none d-sm-table-cell">-5</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="" scope="row">18
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/9443.png" alt="logo FC SHOCHAUX-MONTBELIARD" />FC CHAMBLY OISE
+                        </td>
+                        <td class="PtsBold d-none d-sm-table-cell" >5</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">6</td>
+                        <td class="d-none d-lg-table-cell d-none">13</td>
+                        <td class="d-none d-sm-table-cell">-7</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class="thRow " scope="row">19
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </th>
+
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/17.png" alt="logo FC SHOCHAUX-MONTBELIARD" />AC AJACCIO
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell" >4</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">1</td>
+                        <td class="d-none d-lg-table-cell d-none">5</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">11</td>
+                        <td class="d-none d-sm-table-cell">-8</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <tr>
+                        <th class=" align-middle" scope="row">20
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                        </th>
+                        
+                        <td class="ClubText d-none d-sm-table-cell" >
+                            <img src="assets/img/73.png" alt="logo FC SHOCHAUX-MONTBELIARD" />PAU FOOTBALL CLUB
+                        </td>
+
+                        <td class="PtsBold d-none d-sm-table-cell">3</td>
+                        <td class="d-none d-sm-table-cell">7</td>
+                        <td class="d-none d-lg-table-cell d-none">0</td>
+                        <td class="d-none d-lg-table-cell d-none">3</td>
+                        <td class="d-none d-lg-table-cell d-none">4</td>
+                        <td class="d-none d-lg-table-cell d-none">2</td>
+                        <td class="d-none d-lg-table-cell d-none">9</td>
+                        <td class="d-none d-sm-table-cell">-7</td>
+                        <td class="d-none d-lg-table-cell d-none">
+                            <i class="fas fa-md fa-circle text-muted"></i>
+                            <i class="fas fa-md fa-circle text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
                 </tbody>
             </table>
         </div>
 
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------------------------------------   FIN DU TABLEAU OUF !   ------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-------------------------------------------------------------------------------------------------------------------------->
-        <!-------------------------------------------------------------------------------------------------------------------------->
-        <!-------------------------------------------------------------------------------------------------------------------------->
+    
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--   FIN CONTAINER-FLUID   -->
 
 
     <!-- BOOTSTRAP JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" 
+            crossorigin="anonymous">
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" 
+            crossorigin="anonymous">
     </script>
 </body>
-
 </html>
