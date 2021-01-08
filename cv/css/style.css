@@ -1,0 +1,27 @@
+/************   POLICE SECTION   ***************/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+/************   Text - POLICE   ****************/
+
+#SpanSection1
+{
+  font-family: sans-serif;
+}
+h1
+{
+  color: white;
+  font-family: sans-serif;
+}
+
+#banner_One {
+  background-image: url("assets/img/banner_1.jpg");
+  height: 300px;
+  width: 200px;
+  background-repeat: no-repeat;
+}
+
+button {
+  text-transform: uppercase !important;
+}
