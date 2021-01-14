@@ -12,17 +12,4 @@ if($isEasy == true)
     echo "c'est chaud";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>

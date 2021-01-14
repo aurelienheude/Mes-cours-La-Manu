@@ -5,9 +5,12 @@
       echo ($gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';
     ?>*/
 
-    if($gender != "homme")
+    if($gender == "homme")
     {
-        echo "";
+        echo "C'est un développeur !!!";
+    }elseif($gender == "femme")
+    {
+        echo "C'est une développeuse";
     }
 
 
