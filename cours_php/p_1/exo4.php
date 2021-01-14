@@ -10,5 +10,5 @@
     echo $string."<br />";
     echo $int."<br />";
     echo $float."<br />";
-    echo $boolean."<br />";
+    var_dump($boolean);
 ?>
