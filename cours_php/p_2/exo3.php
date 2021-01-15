@@ -1,28 +1,17 @@
 <?php
 
-$age = 23;
-$gender = true;
+$age = 19;
+$gender = "femme";
 
-if($gender == true)
-{
-    if($age >= 18 AND $gender == "homme")
+    if($age >= 18 && $gender == "homme")
     {
         echo "Vous êtes un homme et vous êtes majeur";
-    }else{
-        echo "Vous êtes un homme et vous êtes mineur.";
-    }
-}
-
-$gender = false;
-
-if($gender == false)
-{
-    if($age >= 18 AND $gender == "Femme")
+    }else if($age < 18 && $gender == "homme") // its working
     {
-        echo "Vous êtes un homme et vous êtes majeur";
-    }else{
         echo "Vous êtes un homme et vous êtes mineur.";
+    }else if($age >= 18 && $gender == "Femme")
+    {
+        echo "Vous êtes une femme et vous êtes majeur";
+    }else{
+        echo "Vous êtes un femme et vous êtes mineur.";
     }
-}
-
-?>
