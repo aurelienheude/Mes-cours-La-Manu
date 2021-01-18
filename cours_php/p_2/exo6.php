@@ -7,13 +7,13 @@
   echo $var_a ?: 'Je suis une variable sans valeur';
 ?>*/
 
-$var_a = null;
+$var_a = 5;
 
-if($var_a != null)
+if($var_a == null)
 {
-    echo $var_b = "je suis une variable sans valeur";
+    echo $var_a;
 }else{
-  echo $var_b = "youpi je suis une variable avec valeur";
+  echo "youpi je suis une variable avec valeur";
 }
 
 ?>

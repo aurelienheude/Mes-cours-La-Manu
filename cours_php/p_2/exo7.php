@@ -6,12 +6,14 @@
   echo $var_b ?? 'Je suis une variable sans valeur';
 ?>*/
 
-$var_b = "Je suis une variable qui à une valeur";
+$var_b = null;
 
-if(empty($var_b))
+if(isset($var_b)) /* si $var_b est définie */
 {
-    $var_b ="Je suis une variable sans valeur";
     echo $var_b;
+}else
+{
+  echo "Je suis une variable non définie";
 }
 
 ?>
