@@ -9,9 +9,11 @@
 
 $var_a = null;
 
-if($var_a == null)
+if($var_a != null)
 {
-    echo "je suis une variable sans valeur";
+    echo $var_b = "je suis une variable sans valeur";
+}else{
+  echo $var_b = "youpi je suis une variable avec valeur";
 }
 
 ?>
