@@ -1,6 +1,4 @@
 <?php
-include("../conf_html/p_high.php");
-
 /*Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100.  
 Tant que la première variable n'est pas inférieure ou égale à 10 :
 - multiplier la première variable avec la deuxième
@@ -15,8 +13,6 @@ while($var1 >= 10)
     $result = $var1 * $var2;
    
     $var1--;
-    echo $result;
+    echo$result."\n"; // \n = saut de ligne
 }
-
-include("../conf_html/p_low.php");
 ?>
