@@ -4,7 +4,7 @@ Utiliser qu'une seule page.-->
 
 <?php 
 
-    if(!isset($_POST['go']))
+    if(!isset($_POST["go"]))
     {
         $viewOn = "<form method='POST'>
                 <select name='civility'>
@@ -21,11 +21,11 @@ Utiliser qu'une seule page.-->
     }
     
 
-    if(isset($_POST['go']))
+    if(isset($_POST["go"]))
     {
-        $firstname = $_POST['firstname'];
-        $surname = $_POST['surname'];
-        $civility = $_POST['civility'];
+        $firstname = $_POST["firstname"];
+        $surname = $_POST["surname"];
+        $civility = $_POST["civility"];
 
         $viewOn = "";
 
