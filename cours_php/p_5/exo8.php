@@ -5,4 +5,5 @@
     {
         echo $months[$i]."\n"; // affichera $prenoms[0], $prenoms[1] etc.
     }
+    
 ?>
