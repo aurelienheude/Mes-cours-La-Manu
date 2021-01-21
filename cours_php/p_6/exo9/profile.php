@@ -1,9 +1,10 @@
 <?php 
 
-if(isset($_GET['profile_info']))
+if(isset($_GET['surname']))
 {
-    $surname = $_GET['profile_info'];
-    echo $surname;
+    echo "<img src='img/".$_GET["filename"]."' alt='super image'><br />";
+
+    echo "Bienvenue ".$_GET["civility"]." ".$_GET["firstname"]." ".$_GET["surname"]. "<br /> Voici vos super informations envoyé !";
 }
 
-?>
+?>"
