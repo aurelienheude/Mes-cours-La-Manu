@@ -5,10 +5,6 @@ $_SESSION["firstname"] = "heude";
 $_SESSION["lastname"] = "aurélien";
 $_SESSION["age"] = 23;
 
-$firstname = $_SESSION["firstname"];
-$lastname = $_SESSION["lastname"];
-$age = $_SESSION["age"];
-
 
 ?>
 
