@@ -1,9 +1,8 @@
 <?php include("../../conf_html/p_high.php");
-session_start();
 ?>
-<div class='container d-flex vh-100'>
-    <div class='row mx-auto align-self-center'>
-        <div class='col-12'>
+<div class="container d-flex vh-100">
+    <div class="row mx-auto align-self-center">
+        <div class="col-12">
                 <?php 
                     if(isset($_COOKIE["pseudo_member"]) && isset($_COOKIE["password_member"]))
                     {
