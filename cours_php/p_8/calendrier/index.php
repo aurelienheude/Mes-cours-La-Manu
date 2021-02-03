@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+                    
+$mois = date('m');
+$annee = date('Y');
+
+var_dump($mois);
+
+var_dump($annee);
+?>
 <html lang="fr">
 
 <head>
@@ -7,26 +15,24 @@
     <title>Calendrier</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <?php include "functions.php"; ?>
-    <link rel="stylesheet" href="../calendrier/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body class="container-fluid m-0 p-0 vh-100">
-    <section class="container-fluid  p-0 m-0">
+    <section class="container-fluid p-0 m-0">
         <div class="row mx-auto">
             <div class="col-md-12 m-0 p-0">
                 <nav class="navbar navbar-dark bg-primary">
 
-                    <a class="ms-3 navbar-brand" href="#">Le Calendrier de <?php if(isset($_POST["years"])){ echo $_POST["years"]." au mois de ". $_POST["months"]; }else{ echo "Mon calendrier"; } ?></a>
+                    <a class="ms-3 navbar-brand" href="#">Le Calendrier</a>
 
                     <form class="me-3" method="POST">
                         <select name="years" class="">
                             <option selected>Selectionnez l'Année</option>
-                            <?php $option = new Calendar; $option->select_years(); ?>
                         </select>
                         
                         <select name ="months" class="">
                             <option selected>Selectionnez le mois</option>
-                            <?php $option = new Calendar; $option->select_months(); ?>
                         </select>
                         <input type="submit" class="btn Thead_style btn-block" value="c'est parti" />
                     </form>
@@ -38,12 +44,7 @@
     <section class="container vh-100 d-flex">
         <div class="row mx-auto align-items-center">
             <div class="col-md-12">
-                <?php
-                    
-                    $mois = date('m');
-                    $annee = date('Y');
-                    
-                    calendrier($mois, $annee); ?>
+            <?php $obj = new calendar; $obj->calendrier($mois, $annee) ?>
             </div>
         </div>
     </section>
