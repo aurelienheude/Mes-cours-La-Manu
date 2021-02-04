@@ -29,6 +29,7 @@ var_dump($annee);
                     <form class="me-3" method="POST">
                         <select name="years" class="">
                             <option selected>Selectionnez l'Année</option>
+                            <?php $obj = new calendar; $obj->years(); ?>
                         </select>
                         
                         <select name ="months" class="">
@@ -44,7 +45,7 @@ var_dump($annee);
     <section class="container vh-100 d-flex">
         <div class="row mx-auto align-items-center">
             <div class="col-md-12">
-            <?php $obj = new calendar; $obj->calendrier($mois, $annee) ?>
+            <?php $obj = new calendar; $obj->calendrier($mois, $annee); ?>
             </div>
         </div>
     </section>

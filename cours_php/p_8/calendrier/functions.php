@@ -1,12 +1,10 @@
-<?php 
+<?php
 
 class calendar
 {
 
 	function calendrier($mois, $annee) 
 	{
-		$mois = date('m');
-		$annee = date('Y');
 
 		$nombre_de_jour = cal_days_in_month(CAL_GREGORIAN, $mois, $annee);
 
@@ -74,11 +72,14 @@ class calendar
 
 	}
 
-	function years(){
+	function years()
+	{
 		for($i = 1970;$i < 2038; $i++)
 		{
-			 "<option value='".$i."'>".$i."</option>";		
+			 $year = "<option value='".$i."'>".$i."</option>";		
 		}
+
+		return $year;
 	}
 
 	function mois($p) 
