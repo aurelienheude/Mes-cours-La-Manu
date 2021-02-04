@@ -5,7 +5,10 @@ include "../../conf_html/p_high.php";
 
 <div class="container py-5 vh-100">
     <div class="row">
-
+        <div class="col-md-12 text-center">
+            <h1 class="h1 text-light">Formulaire</h1>
+        </div>
+    </div>
         <?php
         /*
 
@@ -191,17 +194,18 @@ A la validation de ces informations, il faudra les afficher dans la même page �
             //Ici on affiche tout simplement le contenu du formulaire puisqu'il n'a pas encore été envoyé :)
 
         ?>
-
-            <div class="col-xl-12">
-                <form method="POST" action="">
+        
+        <form method="POST" action="">
+            <div class="row">
+                <div class="col-md-6">
                     <div class="input-group p-1">
                     <span class="Input_span_text "><i class="far fa-address-card"></i></span>
-                        <input type="text" class="Input_text form-control" name="lastname" placeholder="Votre nom">
+                        <input type="text" class="Input_text form-control" name="lastname" placeholder="Votre nom" required>
                     </div>
 
                     <div class="input-group p-1">
                     <span class=""><i class="far fa-address-card"></i></span>
-                        <input type="text" class="Input_text form-control" name="firstname" placeholder="Votre prénom">
+                        <input type="text" class="Input_text form-control" name="firstname" placeholder="Votre prénom" required>
                     </div>
 
                     <div class="input-group p-1">
@@ -212,7 +216,7 @@ A la validation de ces informations, il faudra les afficher dans la même page �
 
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-globe-europe"></i></span>
-                        <select name="birth_country" class="Input_select custom-select custom-select-lg">
+                        <select name="birth_country" class="Input_select custom-select custom-select-lg" required>
                             <option value="select_origin_country" selected="selected">Selectionnez votre pays de naissance </option>
 
                             <option value="Afghanistan">Afghanistan </option>
@@ -473,7 +477,7 @@ A la validation de ces informations, il faudra les afficher dans la même page �
 
                     <div class="input-group p-1">
                         <span class=""><i class="fas fa-id-card"></i></span>
-                        <select name="nationality" class="Input_select custom-select custom-select-lg">
+                        <select name="nationality" class="Input_select custom-select custom-select-lg" required>
                             <option value="select_nationality" selected="selected">Selectionnez votre Nationality</option>
 
                             <option value="AFG">Afghane (Afghanistan)</option>
@@ -678,24 +682,25 @@ A la validation de ces informations, il faudra les afficher dans la même page �
 
 
                     <div class="input-group p-1">
-                    <span class=""><i class="fas fa-map-marker-alt"></i></span>
-                        <input type="text" class="Input_text form-control" name="adress" placeholder="Votre adresse">
+                        <span class=""><i class="fas fa-map-marker-alt"></i></span>
+                        <input type="text" class="Input_text form-control" name="adress" placeholder="Votre adresse" required>
                     </div>
-
+                </div>
+                <div class="col-md-6">
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-at"></i></span>
-                        <input type="email" class="Input_email form-control" name="mail" placeholder="Votre email">
+                        <input type="email" class="Input_email form-control" name="mail" placeholder="Votre email" required>
                     </div>
 
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-mobile-alt"></i></span>
-                        <input type="tel" class="Input_tel form-control" name="phone_number" placeholder="Votre num de tel">
+                        <input type="tel" class="Input_tel form-control" name="phone_number" placeholder="Votre num de tel" required>
                     </div>
 
 
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-scroll"></i></span>
-                        <select name="diploma" class="Input_select custom-select custom-select-lg">
+                        <select name="diploma" class="Input_select custom-select custom-select-lg" required>
                             <option value="select_diploma" selected="selected">Selectionnez votre niveau d'études</option>
 
                             <option value="capbep">CAP, BEP</option>
@@ -712,39 +717,44 @@ A la validation de ces informations, il faudra les afficher dans la même page �
 
                     <div class="input-group p-1">
                     <span class=""><i class="fab fa-product-hunt"></i></span>
-                        <input type="number" maxlength="13" class="Input_number form-control" name="num_pole_emploi" placeholder="votre numéro pole emploi" />
+                        <input type="number" mamdength="13" class="Input_number form-control" name="num_pole_emploi" placeholder="votre numéro pole emploi" required>
                     </div>
 
 
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-certificate"></i></span>
-                        <input type="number" class="Input_number form-control" name="badge_number" placeholder="Nombre de badge" />
+                        <input type="number" class="Input_number form-control" name="badge_number" placeholder="Nombre de badge" required>
                     </div>
 
                     <div class="input-group p-1">
-                    <span class="">https://www.codecademy.com/</span>
-                        <input type="url" class="Input_text form-control" name="codeacademy_link" pattern="http://.*" required />
+                    <span class="Span_style"><i class="fas fa-link"></i></span>
+                        <input type="url" class="Input_text form-control" name="codeacademy_link" placeholder="https://www.codecademy.com/" pattern="http://.*" required >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <div class="input-group p-1 pt-3">
+                        <textarea class="Input_textarea  form-control" name="if_you_are_a_super_hero" placeholder="Si vous étiez un super héros/une super héroïne, qui seriez-vous et pourquoi ?" rows="3" required></textarea>
                     </div>
 
-                    <div class="input-group p-1">
-                        <textarea class="Input_textarea  form-control" name="if_you_are_a_super_hero" placeholder="Si vous étiez un super héros/une super héroïne, qui seriez-vous et pourquoi ?" rows="3"></textarea>
+                    <div class="input-group p-1 pt-3">
+                        <textarea class="Input_textarea form-control" name="tell_us_one_of_ur_hack" placeholder="Racontez-nous un de vos 'hacks' (pas forcément technique ou informatique)" rows="3" required></textarea>
                     </div>
 
-                    <div class="input-group p-1">
-                        <textarea class="Input_textarea form-control" name="tell_us_one_of_ur_hack" placeholder="Racontez-nous un de vos 'hacks' (pas forcément technique ou informatique)" rows="3"></textarea>
-                    </div>
-
-                    <div class="input-group p-1">
-                        <textarea class="Input_textarea form-control" name="have_you_ever_have_informatic_experience_before" placeholder="Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ?" rows="3"></textarea>
+                    <div class="input-group p-1 pt-3">
+                        <textarea class="Input_textarea form-control" name="have_you_ever_have_informatic_experience_before" placeholder="Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ?" rows="3" required></textarea>
                     </div>
 
                     <div class="form-group pt-3 p-1 text-center">
                         <input type="submit" class="Input_btn btn btn-outline-dark" value="Envoyez" name="go" />
                     </div>
-                </form>
+                </div>
             </div>
-    </div>
 
+        </form>
+    </div>
 <?php
 
         }
