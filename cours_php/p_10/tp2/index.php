@@ -4,12 +4,7 @@ include "../../conf_html/p_high.php";
 ?>
 
 <div class="container py-5 vh-100">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h1 class="h1 text-light">Formulaire</h1>
-        </div>
-    </div>
-        <?php
+    <?php
 
         if (isset($_POST["go"])) 
         {
@@ -43,24 +38,6 @@ include "../../conf_html/p_high.php";
 
             $have_you_ever_have_informatic_experience_before = $_POST["have_you_ever_have_informatic_experience_before"];
 
-            $info = array(
-                            $lastname,
-                            $firstname,
-                            $birth_date,
-                            $birth_country,
-                            $nationality,
-                            $adress,
-                            $mail,
-                            $phone_number,
-                            $diploma,
-                            $num_pole_emploi,
-                            $badge_number,
-                            $codeacademy_link,
-                            $if_you_are_a_super_hero,
-                            $tell_us_one_of_ur_hack,
-                            $have_you_ever_have_informatic_experience_before
-                        );
-
             if (isset($lastname)) 
             {
                 if (isset($firstname)) 
@@ -92,18 +69,99 @@ include "../../conf_html/p_high.php";
                                                                     if (isset($have_you_ever_have_informatic_experience_before)) 
                                                                     {
                                                                         ?>    
-                                                                            <div class="col-md-12">
-                                                                                <?php 
+                                                                        <div class="container m-0 p-0">
+                                                                        
+                                                                            <div class="row py-5">
+                                                                                <div class="col-xl-12 d-flex align-self-center justify-content-center">
+                                                                                    <h1 class="h1 text-light">MES INFORMATIONS</h1>
+                                                                                </div>
+                                                                            </div>    
 
-                                                                                echo "<div class='col-md-12 bg-primary'>";
+                                                                            <div class="row">
+                                                                                <div class="col-xl-6">
+                                                                                    <div class="input-group p-1">
+                                                                                        <span class="Input_span_text "><i class="far fa-address-card"></i></span>
+                                                                                        <span class="Input_text form-control">Nom : <?php echo $lastname; ?></span>
+                                                                                    </div>
 
-                                                                                    foreach($info as $value)
-                                                                                    {
-                                                                                        echo $value."<br />";
-                                                                                    }
-                                                                                echo "</div>";
-                                                                                ?>
+                                                                                    <div class="input-group p-1">
+                                                                                        <span class=""><i class="far fa-address-card"></i></span>
+                                                                                        <span class="Input_text form-control">Prénom : <?php echo $firstname; ?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fas fa-birthday-cake"></i></span>
+                                                                                        <span class="Input_text form-control">Date de naissance : <?php echo $birth_date?></span>
+                                                                                    </div>
+
+
+                                                                                    <div class="input-group p-1">
+                                                                                        <span class=""><i class="fas fa-globe-europe"></i></span>
+                                                                                        <span class="Input_text form-control">Pays de naissance : <?php echo $birth_country?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-1">
+                                                                                        <span class=""><i class="fas fa-id-card"></i></span>
+                                                                                        <span class="Input_text form-control">Nationalité : <?php echo $nationality; ?></span>
+                                                                                    </div>
+
+
+                                                                                    <div class="input-group p-1">
+                                                                                        <span class=""><i class="fas fa-map-marker-alt"></i></span>
+                                                                                        <span class="Input_text form-control">Addresse : <?php echo $adress; ?></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xl-6">
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fas fa-at"></i></span>
+                                                                                    <span class="Input_text form-control">Mail : <?php echo $mail; ?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fas fa-mobile-alt"></i></span>
+                                                                                    <span class="Input_text form-control">Tel : <?php echo $phone_number; ?></span>
+                                                                                    </div>
+
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fas fa-scroll"></i></span>
+                                                                                    <span class="Input_text form-control">Diplôme : <?php echo $diploma?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fab fa-product-hunt"></i></span>
+                                                                                    <span class="Input_text form-control">Numéro pole emploi : <?php echo $num_pole_emploi;?></span>
+                                                                                    </div>
+
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class=""><i class="fas fa-certificate"></i></span>
+                                                                                    <span class="Input_text form-control">Nombre de badge : <?php echo $badge_number; ?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-1">
+                                                                                    <span class="Span_style"><i class="fas fa-link"></i></span>
+                                                                                    <span class="Input_text form-control"> Lien : <?php echo $codeacademy_link; ?></span>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
+
+                                                                            <div class="row pt-5">
+                                                                                <div class="col-xl-12">
+                                                                                    <div class="input-group p-3">
+                                                                                        <span class="Input_textarea form-control">Si vous étiez un super héros/une super héroïne, qui seriez-vous et pourquoi ? <br /><?php echo $if_you_are_a_super_hero;?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-3">
+                                                                                        <span class="Input_textarea form-control">Racontez-nous un de vos 'hacks' (pas forcément technique ou informatique) <br /><?php echo $tell_us_one_of_ur_hack;?></span>
+                                                                                    </div>
+
+                                                                                    <div class="input-group p-3">
+                                                                                        <span class="Input_textarea form-control">Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ? <br /><?php echo $have_you_ever_have_informatic_experience_before;?></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                         <?php
                                                                     } else {
                                                                         $error = "";
@@ -156,10 +214,14 @@ include "../../conf_html/p_high.php";
             //Ici on affiche tout simplement le contenu du formulaire puisqu'il n'a pas encore été envoyé :)
 
         ?>
-        
+    <div class="row">
+        <div class="col-xl-12 text-center">
+            <h1 class="h1 text-light">Formulaire</h1>
+        </div>
+    </div>
         <form method="POST" action="">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6">
                     <div class="input-group p-1">
                     <span class="Input_span_text "><i class="far fa-address-card"></i></span>
                         <input type="text" class="Input_text form-control" name="lastname" placeholder="Votre nom" required>
@@ -440,7 +502,7 @@ include "../../conf_html/p_high.php";
                     <div class="input-group p-1">
                         <span class=""><i class="fas fa-id-card"></i></span>
                         <select name="nationality" class="Input_select custom-select custom-select-lg" required>
-                            <option value="select_nationality" selected="selected">Selectionnez votre Nationality</option>
+                            <option value="select_nationality" selected="selected">Selectionnez votre Nationalité</option>
 
                             <option value="AFG">Afghane (Afghanistan)</option>
                             <option value="ALB">Albanaise (Albanie)</option>
@@ -549,8 +611,8 @@ include "../../conf_html/p_high.php";
                             <option value="MKD">Macédonienne (Macédoine)</option>
                             <option value="MYS">Malaisienne (Malaisie)</option>
                             <option value="MWI">Malawienne (Malawi)</option>
-                            <option value="MDV">Maldivienne (Maldives)</option>
-                            <option value="MDG">Malgache (Madagascar)</option>
+                            <option value="xlV">Maldivienne (Maldives)</option>
+                            <option value="xlG">Malgache (Madagascar)</option>
                             <option value="MLI">Maliennes (Mali)</option>
                             <option value="MLT">Maltaise (Malte)</option>
                             <option value="MAR">Marocaine (Maroc)</option>
@@ -559,7 +621,7 @@ include "../../conf_html/p_high.php";
                             <option value="MRT">Mauritanienne (Mauritanie)</option>
                             <option value="MEX">Mexicaine (Mexique)</option>
                             <option value="FSM">Micronésienne (Micronésie)</option>
-                            <option value="MDA">Moldave (Moldovie)</option>
+                            <option value="xlA">Moldave (Moldovie)</option>
                             <option value="MCO">Monegasque (Monaco)</option>
                             <option value="MNG">Mongole (Mongolie)</option>
                             <option value="MNE">Monténégrine (Monténégro)</option>
@@ -648,7 +710,7 @@ include "../../conf_html/p_high.php";
                         <input type="text" class="Input_text form-control" name="adress" placeholder="Votre adresse" required>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xl-6">
                     <div class="input-group p-1">
                     <span class=""><i class="fas fa-at"></i></span>
                         <input type="email" class="Input_email form-control" name="mail" placeholder="Votre email" required>
@@ -679,7 +741,7 @@ include "../../conf_html/p_high.php";
 
                     <div class="input-group p-1">
                     <span class=""><i class="fab fa-product-hunt"></i></span>
-                        <input type="number" mamdength="13" class="Input_number form-control" name="num_pole_emploi" placeholder="votre numéro pole emploi" required>
+                        <input type="number" maxlength="13" class="Input_number form-control" name="num_pole_emploi" placeholder="votre numéro pole emploi" required>
                     </div>
 
 
@@ -696,7 +758,7 @@ include "../../conf_html/p_high.php";
             </div>
 
             <div class="row pt-5">
-                <div class="col-md-12">
+                <div class="col-xl-12">
                     <div class="input-group p-1 pt-3">
                         <textarea class="Input_textarea  form-control" name="if_you_are_a_super_hero" placeholder="Si vous étiez un super héros/une super héroïne, qui seriez-vous et pourquoi ?" rows="3" required></textarea>
                     </div>
