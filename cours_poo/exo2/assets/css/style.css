@@ -15,5 +15,63 @@ body
 {
     height: 100%;
 
-    background: whitesmoke;
+    background: rgba(176, 247, 247, 0.801);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_bank
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 400px;
+    padding: 10px;
+
+    background: white;
+    border-left: 4px solid rgba(30, 92, 33, 0.822);
+
+    box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.452);
+    -webkit-box-shadow: 7px 7px 12px 0px rgba(0,0,0,0.452);
+    -moz-box-shadow: 7px 7px 12px 0px rgba(0, 0, 0, 0.452);
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 95%;
+    padding: 10px;
+
+    background: rgba(0, 0, 0, 0.027);
+}
+
+.info ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.info li
+{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.wallet
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 95%;
+    padding-top: 10px;
 }

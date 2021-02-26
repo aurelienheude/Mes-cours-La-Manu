@@ -20,19 +20,18 @@
         /**
          * Default constructor
          */
-        public function __construct($amount/*string $newHolder, int $newBalance, int $newRate, string $newCurrency*/)
+        public function __construct(string $newHolder, int $newBalance, int $newRate, string $newCurrency)
         {
-            $this->Balance($amount);
-            /*
             $this->set_holder($newHolder);
             $this->set_balance($newBalance);
             $this->set_interestRate($newRate);
-            $this->set_currency($newCurrency);*/
+            $this->set_currency($newCurrency);
         }
     
         /**
          * @param int $amount
          */
+        
         public function Credit(int $amount)
         {
             $this->Balance += $amount;
@@ -50,22 +49,22 @@
 
         public function get_interestRate() 
         {
-            return $this->InterestRate;
+            echo $this->InterestRate;
         }
 
         public function get_currency() 
         {
-            return $this->Currency;
+            echo $this->Currency;
         }
 
         public function get_balance() 
         {
-            return $this->Balance;
+            echo $this->Balance;
         }
 
         public function get_holder() 
         {
-            return $this->Holder;
+            echo $this->Holder;
         }
 
         /***  SET FUNCTION  ***/

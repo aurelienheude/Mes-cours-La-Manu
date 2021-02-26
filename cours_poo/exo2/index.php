@@ -1,5 +1,8 @@
 <?php 
     include "models/model.php";
+
+    $accounts = new AccountBank("Heude Aurélien", 2165, 50, "€");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,10 +16,22 @@
 </head>
 <body>
 <div class="container">
-    <div class="child_bank">
+    <div class="cards_bank">
+        <div class="info">
+            <ul>
+                <li><strong>CCHQ</strong></li>
+                <li><strong>Monsieur <?php $accounts->get_holder(); ?></strong></li>
+                <li>n°61495862152</li>
+            </ul>
+        </div>
+
+        <div class="wallet">
+            <div class="balance">
+                Mon Porte monnaie : <strong><?php $accounts->get_balance(); $accounts->get_currency();?></strong>
+            </div>
+        </div>
     <?php 
-        $transaction_object = new AccountBank;
-        $transaction_object->Credit(30);
+        
     ?>
     </div>
 </div>
