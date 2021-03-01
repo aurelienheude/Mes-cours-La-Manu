@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+html{
+    height: 100%;
+    background: none;
+}
+
+body{
+    height: 100%;
+    background: rgba(0, 106, 124, 0.815)
+}
+
+.hero_banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero{
+
+}
+
+.container
+{
+
+}
+
+.
